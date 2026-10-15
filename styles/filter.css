@@ -69,11 +69,11 @@
 .sectionHeader {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
 
 .sectionTitle {
@@ -81,6 +81,7 @@
   font-size: 28px;
   line-height: 36px;
   color: #212121;
+  margin: 0;
 }
 
 .locationHighlight {
@@ -92,6 +93,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #00798a;
+  line-height: 1;
   transition: color 0.2s ease;
 }
 
@@ -106,7 +108,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 0px;
   margin-bottom: 48px;
 }
 
@@ -115,6 +117,7 @@
   width: 272px;
   height: 153px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .eventCard {
@@ -133,6 +136,7 @@
   height: 153px;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
 }
 
 .eventInfo {

@@ -1,0 +1,210 @@
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212121;
+  margin: 32px 0 20px 0;
+}
+
+.filtersContainer {
+  display: flex;
+  gap: 16px;
+  background-color: #f1f4f5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.filterGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+
+.filterGroup select {
+  font-size: 15px;
+  color: #212121;
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23757575' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.filterGroup select:hover {
+  border-color: #b0b0b0;
+}
+
+.filterGroup select:focus {
+  border-color: #008294;
+  box-shadow: 0 0 0 3px rgba(0, 130, 148, 0.15);
+}
+
+.noEventsMessage {
+  font-size: 16px;
+  color: #757575;
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+}
+
+.locationHighlight {
+  color: #00798a;
+  font-style: normal;
+}
+
+.seeAllLink {
+  font-weight: 500;
+  font-size: 16px;
+  color: #00798a;
+  transition: color 0.2s ease;
+}
+
+.seeAllLink:hover {
+  color: #006270;
+  text-decoration: underline;
+}
+
+.indexEventsGrid,
+.eventsGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.eventImageContainer {
+  position: relative;
+  width: 272px;
+  height: 153px;
+  overflow: hidden;
+}
+
+.eventCard {
+  width: 272px;
+  height: 399px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.eventImage {
+  width: 272px;
+  height: 153px;
+  object-fit: cover;
+  display: block;
+}
+
+.eventInfo {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.eventTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212121;
+  margin-bottom: 8px;
+}
+
+.eventCategory {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #757575;
+  margin-bottom: 12px;
+}
+
+.eventDate {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.eventMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  margin-top: auto;
+}
+
+.eventAttendees,
+.eventPrice {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.onlineBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #212121;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.onlineIcon {
+  margin-right: 4px;
+  display: inline-block;
+}

@@ -1,0 +1,148 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Логотип */
+.navbarLogo img {
+  height: 34px;
+  display: block;
+}
+
+/* Центральный поиск */
+.navbarSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border-right: 1px solid #dcdcdc;
+  padding-left: 12px;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.searchEventsInput,
+.searchLocationInput {
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #212121;
+  outline: none;
+  width: 100%;
+}
+
+.searchLocationInput {
+  width: 40%;
+}
+
+.navbarSearchBtn {
+  background-color: #f65858;
+  border: none;
+  padding: 0 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navbarSearchBtn:hover {
+  background-color: #e04444;
+}
+
+.navbarActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.langSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.loginLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.loginLink:hover {
+  color: #f65858;
+}
+
+.signUpBtn {
+  background-color: #008294;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.signUpBtn:hover {
+  background-color: #006977;
+}

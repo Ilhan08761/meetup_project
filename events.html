@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/filter.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. НАВБАР -->
+    <header class="navbar">
+      <div class="container navbarContent">
+        <a href="index.html" class="navbarLogo">
+          <img src="styles/images/logo.svg" alt="Meetup" />
+        </a>
+
+        <div class="navbarSearch">
+          <div class="searchInputWrapper">
+            <span class="searchIcon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#757575"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search events"
+              class="searchEventsInput"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Mountain View, CA"
+            class="searchLocationInput"
+          />
+          <button class="navbarSearchBtn">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="navbarActions">
+          <div class="langSelector">
+            <span class="langGlobe">🌐</span>
+            <span class="langText">English</span>
+          </div>
+          <a href="#" class="loginLink">Log in</a>
+          <a href="#" class="signUpBtn">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+      <h1 class="pageTitle">Events near New York, NY</h1>
+
+      <!-- Блок фильтров -->
+      <div class="filtersContainer">
+        <div class="filterGroup">
+          <label for="filterType">Type</label>
+          <select id="filterType">
+            <option value="all">Any Type</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+        </div>
+
+        <div class="filterGroup">
+          <label for="filterDistance">Distance</label>
+          <select id="filterDistance">
+            <option value="all">Any Distance</option>
+            <option value="5 km">5 km</option>
+            <option value="10 km">10 km</option>
+            <option value="15 km">15 km</option>
+            <option value="25 km">25 km</option>
+            <option value="50 km">50 km</option>
+            <option value="75 km">75 km</option>
+            <option value="100 km">100 km</option>
+          </select>
+        </div>
+
+        <div class="filterGroup">
+          <label for="filterCategory">Category</label>
+          <select id="filterCategory">
+            <option value="all">Any Category</option>
+            <option value="Social Activities">Social Activities</option>
+            <option value="Hobbies and Passions">Hobbies and Passions</option>
+            <option value="Health and Wellbeing">Health and Wellbeing</option>
+            <option value="Business">Business</option>
+            <option value="Technology">Technology</option>
+          </select>
+        </div>
+
+        <div class="filterGroup">
+          <label for="filterDate">Day</label>
+          <select id="filterDate">
+            <option value="all">Any Day</option>
+            <option value="Mar 13, 11:00 AM">Mar 13, 11:00 AM</option>
+            <option value="Mar 14, 11:00 AM">Mar 14, 11:00 AM</option>
+            <option value="Mar 14, 8:00 PM">Mar 14, 8:00 PM</option>
+            <option value="Mar 16, 2:00 PM">Mar 16, 2:00 PM</option>
+            <option value="Mar 23, 11:30 AM">Mar 23, 11:30 AM</option>
+            <option value="Mar 30, 2:00 PM">Mar 30, 2:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="eventsGrid" class="eventsGrid"></div>
+    </main>
+
+    <!-- 3. ФУТЕР -->
+    <footer class="footer">
+      <div class="container footerContent">
+        <p>&copy; 2026 Meetup Project. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</html>

@@ -3,7 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/filter.css" />
     <title>Main page</title>
   </head>
-  <body></body>
+
+  <body>
+    <header class="navbar">
+      <div class="container navbarContent">
+        <!-- Клик на лого ведёт на главную страницу -->
+        <a href="index.html" class="logo">
+          <img src="styles/images/logo.svg" alt="Meetup Logo" />
+        </a>
+
+        <!-- Поисковая панель внутри навбара из макета -->
+        <div class="navbarSearch">
+          <input
+            type="text"
+            placeholder="Search events"
+            class="searchEventsInput"
+          />
+          <input
+            type="text"
+            placeholder="Mountain View, CA"
+            class="searchLocationInput"
+          />
+          <button class="searchBtn">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Правая часть навбара: языки, авторизация -->
+        <div class="navbarActions">
+          <span class="langSelect">English</span>
+          <a href="#" class="loginLink">Log in</a>
+          <a href="#" class="signUpBtn">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+      <!-- ГЛАВНЫЙ БЛОК -->
+      <section class="heroSection">
+        <div class="container heroContent">
+          <div class="heroText">
+            <h1 class="heroTitle">
+              The people platform—Where interests become friendships
+            </h1>
+            <p class="heroDescription">
+              Whatever your interest, from hiking and reading to networking and
+              skill sharing, there are thousands of people who share it on
+              Meetup. Events are happening every day—sign up to join the fun.
+            </p>
+            <!-- При клике пользователь попадает на вторую страницу -->
+            <a href="events.html" class="joinMeetupBtn">Join Meetup</a>
+          </div>
+          <div class="heroImageContainer">
+            <img
+              src="styles/images/event.svg"
+              alt="People connection illustration"
+              class="heroImage"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- СЕКЦИЯ ПОПУЛЯРНЫХ МЕРОПРИЯТИЙ-->
+      <section class="featuredSection">
+        <div class="container">
+          <div class="sectionHeader">
+            <h2 class="sectionTitle">
+              Events near
+              <span class="locationHighlight">Mountain View, CA</span>
+            </h2>
+            <!-- Ссылка для перехода на страницу всех фильтров -->
+            <a href="events.html" class="seeAllLink">See all events</a>
+          </div>
+
+          <div id="indexEventsGrid" class="indexEventsGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+      <div class="container footerContent">
+        <p>&copy; 2026 Meetup Project. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/data.js"></script>
 </html>

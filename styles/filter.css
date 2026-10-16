@@ -103,7 +103,8 @@
 }
 
 .indexEventsGrid,
-.eventsGrid {
+.eventsGrid,
+.onlineEventsGrid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

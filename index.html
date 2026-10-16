@@ -18,31 +18,46 @@
   <body>
     <header class="navbar">
       <div class="container navbarContent">
-        <!-- Клик на лого ведёт на главную страницу -->
         <a href="index.html" class="logo">
           <img src="styles/images/logo.svg" alt="Meetup Logo" />
         </a>
 
-        <!-- Поисковая панель внутри навбара из макета -->
         <div class="navbarSearch">
-          <input
-            type="text"
-            placeholder="Search events"
-            class="searchEventsInput"
-          />
-          <input
-            type="text"
-            placeholder="Mountain View, CA"
-            class="searchLocationInput"
-          />
-          <button class="searchBtn">
+          <div class="searchInputWrapper">
+            <span class="searchIcon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#757575"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search events"
+              class="searchEventsInput"
+            />
+          </div>
+
+          <select class="searchLocationSelect">
+            <option value="Mountain View, CA">Mountain View, CA</option>
+            <option value="New York, NY">New York, NY</option>
+            <option value="Orlando, FL">Orlando, FL</option>
+          </select>
+
+          <button class="navbarSearchBtn">
             <svg
               width="16"
               height="16"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
-              stroke-width="2"
+              stroke="white"
+              stroke-width="2.5"
             >
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -50,7 +65,6 @@
           </button>
         </div>
 
-        <!-- Правая часть навбара: языки, авторизация -->
         <div class="navbarActions">
           <span class="langSelect">English</span>
           <a href="#" class="loginLink">Log in</a>
@@ -61,7 +75,6 @@
 
     <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main>
-      <!-- ГЛАВНЫЙ БЛОК -->
       <section class="heroSection">
         <div class="container heroContent">
           <div class="heroText">
@@ -73,7 +86,6 @@
               skill sharing, there are thousands of people who share it on
               Meetup. Events are happening every day—sign up to join the fun.
             </p>
-            <!-- При клике пользователь попадает на вторую страницу -->
             <a href="events.html" class="joinMeetupBtn">Join Meetup</a>
           </div>
           <div class="heroImageContainer">
@@ -99,6 +111,16 @@
           </div>
 
           <div id="indexEventsGrid" class="indexEventsGrid"></div>
+        </div>
+      </section>
+      <!-- СЕКЦИЯ ПРЕДСТОЯЩИХ ОНЛАЙН МЕРОПРИЯТИЙ -->
+      <section class="upcomingOnlineSection">
+        <div class="container">
+          <div class="sectionHeader">
+            <h2 class="sectionTitle">Upcoming online events</h2>
+            <a href="events.html" class="seeAllLink">See all events</a>
+          </div>
+          <div id="onlineEventsGrid" class="onlineEventsGrid"></div>
         </div>
       </section>
     </main>

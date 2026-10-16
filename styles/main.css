@@ -191,3 +191,82 @@
   color: #212121;
   display: block;
 }
+
+.howMeetupSection {
+  margin-top: 48px;
+  margin-bottom: 60px;
+}
+
+.howMeetupMainTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+  margin: 0 0 24px 0;
+}
+
+.howMeetupContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+  width: 100%;
+}
+
+.howMeetupCard {
+  width: 580px;
+  min-width: 580px;
+  max-width: 580px;
+  height: 180px;
+  background-color: #f0fbfd;
+  border-radius: 8px;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.howMeetupIcon {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.howMeetupCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.howMeetupCardTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212121;
+  margin: 0 0 8px 0;
+}
+
+.howMeetupCardDescription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.howMeetupCardLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #00798a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.howMeetupCardLink:hover {
+  color: #006270;
+  text-decoration: underline;
+}

@@ -60,3 +60,73 @@
   object-fit: contain;
   display: block;
 }
+
+.joinMeetupSection {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.joinMeetupBanner {
+  width: 1192px;
+  height: 236px;
+  background-color: #f0fbfd;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.joinMeetupTextContent {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.joinMeetupTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #212121;
+  margin: 0 0 12px 0;
+}
+
+.joinMeetupDescription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  margin-bottom: 24px;
+}
+
+.joinMeetupSignBtn {
+  display: inline-block;
+  background-color: #e32359;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.joinMeetupSignBtn:hover {
+  background-color: #c21a47;
+}
+
+.joinMeetupImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinMeetupImage {
+  width: 341px;
+  height: 196px;
+  object-fit: contain;
+  display: block;
+}

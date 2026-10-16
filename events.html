@@ -36,11 +36,14 @@
               class="searchEventsInput"
             />
           </div>
-          <input
-            type="text"
-            placeholder="Mountain View, CA"
-            class="searchLocationInput"
-          />
+
+          <!-- ИСПРАВЛЕНО: Вместо инпута теперь селект выбора города -->
+          <select class="searchLocationSelect">
+            <option value="Mountain View, CA">Mountain View, CA</option>
+            <option value="New York, NY">New York, NY</option>
+            <option value="Orlando, FL">Orlando, FL</option>
+          </select>
+
           <button class="navbarSearchBtn">
             <svg
               width="16"

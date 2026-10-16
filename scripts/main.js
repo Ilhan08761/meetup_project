@@ -50,6 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .map((event) => createCardHtml(event))
       .join("");
   }
+  const onlineGrid = document.getElementById("onlineEventsGrid");
+  if (onlineGrid) {
+    onlineGrid.innerHTML = eventsData
+      .slice(8, 12)
+      .map((event) => createCardHtml(event))
+      .join("");
+  }
 
   const filterGrid = document.getElementById("eventsGrid");
   if (filterGrid) {

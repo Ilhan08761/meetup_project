@@ -65,13 +65,11 @@ a {
   gap: 20px;
 }
 
-/* Логотип */
 .navbarLogo img {
   height: 34px;
   display: block;
 }
 
-/* Центральный поиск */
 .navbarSearch {
   display: flex;
   align-items: center;
@@ -168,4 +166,69 @@ a {
 
 .signUpBtn:hover {
   background-color: #006977;
+}
+
+.popularCitiesSection {
+  margin-top: 48px;
+  margin-bottom: 60px;
+}
+
+.citiesMainTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+  margin: 0 0 8px 0;
+}
+
+.citiesSubtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.citiesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.cityCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cityCard:hover {
+  transform: translateY(-4px);
+}
+
+.cityImageWrapper {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cityImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cityName {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #212121;
 }

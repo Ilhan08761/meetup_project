@@ -192,6 +192,12 @@
   gap: 4px;
 }
 
+.ticketIcon {
+  color: #00798a;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
+
 .onlineBadge {
   position: absolute;
   top: 8px;

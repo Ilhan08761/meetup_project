@@ -8,7 +8,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- 1. НАВБАР -->
     <header class="navbar">
       <div class="container navbarContent">
         <a href="index.html" class="navbarLogo">
@@ -36,8 +35,6 @@
               class="searchEventsInput"
             />
           </div>
-
-          <!-- ИСПРАВЛЕНО: Вместо инпута теперь селект выбора города -->
           <select class="searchLocationSelect">
             <option value="Mountain View, CA">Mountain View, CA</option>
             <option value="New York, NY">New York, NY</option>
@@ -69,12 +66,8 @@
         </div>
       </div>
     </header>
-
-    <!-- 2. ОСНОВНОЙ КОНТЕНТ -->
     <main class="container">
       <h1 class="pageTitle">Events near New York, NY</h1>
-
-      <!-- Блок фильтров -->
       <div class="filtersContainer">
         <div class="filterGroup">
           <label for="filterType">Type</label>
@@ -128,10 +121,148 @@
       <div id="eventsGrid" class="eventsGrid"></div>
     </main>
 
-    <!-- 3. ФУТЕР -->
     <footer class="footer">
       <div class="container footerContent">
-        <p>&copy; 2026 Meetup Project. All rights reserved.</p>
+        <div class="footerTopRow">
+          <span class="footerCreateText">Create your own Meetup group.</span>
+          <a href="events.html" class="footerGetStartedBtn">Get Started</a>
+        </div>
+        <div class="footerLinksRow">
+          <div class="footerColumn">
+            <h4 class="footerColumnTitle">Your Account</h4>
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Sign up</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Log in</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Help</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Become an Affiliate</a
+            >
+          </div>
+          <div class="footerColumn">
+            <h4 class="footerColumnTitle">Discover</h4>
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Groups</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Calendar</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Topics</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Cities</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Online Events</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Local Guides</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Make Friends</a
+            >
+          </div>
+          <div class="footerColumn">
+            <h4 class="footerColumnTitle">Meetup</h4>
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >About</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Blog</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Meetup Pro</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Careers</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Apps</a
+            >
+            <a href="#" class="footerLink" onclick="event.preventDefault()"
+              >Podcast</a
+            >
+          </div>
+        </div>
+        <div class="footerSocialRow">
+          <div class="footerFollowBlock">
+            <span class="footerFollowText">Follow us</span>
+            <div class="footerSocialIcons">
+              <a href="#" onclick="event.preventDefault()"
+                ><img
+                  src="styles/images/Facebook.svg"
+                  alt="Facebook"
+                  class="socialIcon"
+              /></a>
+              <a href="#" onclick="event.preventDefault()"
+                ><img
+                  src="styles/images/Twitter.svg"
+                  alt="Twitter"
+                  class="socialIcon"
+              /></a>
+              <a href="#" onclick="event.preventDefault()"
+                ><img
+                  src="styles/images/YouTube.svg"
+                  alt="YouTube"
+                  class="socialIcon"
+              /></a>
+              <a href="#" onclick="event.preventDefault()"
+                ><img
+                  src="styles/images/Instagram.svg"
+                  alt="Instagram"
+                  class="socialIcon"
+              /></a>
+              <a href="#" onclick="event.preventDefault()"
+                ><img
+                  src="styles/images/TikTok.svg"
+                  alt="TikTok"
+                  class="socialIcon"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footerAppLinks">
+            <a href="#" onclick="event.preventDefault()">
+              <img
+                src="styles/images/download2.svg"
+                alt="Get it on Google Play"
+                class="googlePlayImg"
+              />
+            </a>
+            <a href="#" onclick="event.preventDefault()">
+              <img
+                src="styles/images/download1.svg"
+                alt="Download on the App Store"
+                class="appStoreImg"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footerBottomRow">
+          <span class="footerCopyright">&copy; 2026 Meetup</span>
+          <div class="footerLegalLinks">
+            <a href="#" class="legalLink" onclick="event.preventDefault()"
+              >Terms of Service</a
+            >
+            <a href="#" class="legalLink" onclick="event.preventDefault()"
+              >Privacy Policy</a
+            >
+            <a href="#" class="legalLink" onclick="event.preventDefault()"
+              >Do Not Sell or Share My Personal Data</a
+            >
+            <a href="#" class="legalLink" onclick="event.preventDefault()"
+              >Cookie Policy</a
+            >
+            <a href="#" class="legalLink" onclick="event.preventDefault()"
+              >Help</a
+            >
+          </div>
+        </div>
       </div>
     </footer>
   </body>

@@ -66,79 +66,92 @@
         </div>
       </div>
     </header>
-    <main class="container eventsPageLayout">
-      <div class="eventsLeftColumn">
-        <h1 class="pageTitle">Events near New York, NY</h1>
 
-        <div class="eventsTabHeader">
-          <span class="activeTab">Events</span>
+    <main class="container">
+      <h1 class="pageTitle">Events near New York, NY</h1>
+
+      <div class="eventsPageLayout">
+        <div class="eventsLeftColumn">
+          <div class="eventsTabHeader">
+            <span class="activeTab">Events</span>
+          </div>
+
+          <div class="filtersContainer">
+            <div class="filterGroup">
+              <select id="filterType">
+                <option value="all">Any type</option>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline</option>
+              </select>
+            </div>
+
+            <div class="filterGroup">
+              <select id="filterDistance">
+                <option value="all">Any distance</option>
+                <option value="5 km">5 km</option>
+                <option value="10 km">10 km</option>
+                <option value="15 km">15 km</option>
+                <option value="25 km">25 km</option>
+                <option value="50 km">50 km</option>
+                <option value="75 km">75 km</option>
+                <option value="100 km">100 km</option>
+              </select>
+            </div>
+
+            <div class="filterGroup">
+              <select id="filterCategory">
+                <option value="all">Any category</option>
+                <option value="Social Activities">Social Activities</option>
+                <option value="Hobbies and Passions">
+                  Hobbies and Passions
+                </option>
+                <option value="Health and Wellbeing">
+                  Health and Wellbeing
+                </option>
+                <option value="Business">Business</option>
+                <option value="Technology">Technology</option>
+              </select>
+            </div>
+
+            <div class="filterGroup">
+              <select id="filterDate">
+                <option value="all">Any day</option>
+                <option value="Mar 13, 11:00 AM">Mar 13, 11:00 AM</option>
+                <option value="Mar 14, 11:00 AM">Mar 14, 11:00 AM</option>
+                <option value="Mar 14, 8:00 PM">Mar 14, 8:00 PM</option>
+                <option value="Mar 16, 2:00 PM">Mar 16, 2:00 PM</option>
+                <option value="Mar 23, 11:30 AM">Mar 23, 11:30 AM</option>
+                <option value="Mar 30, 2:00 PM">Mar 30, 2:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="eventsGrid" class="eventsListContainer"></div>
         </div>
-        <div class="filtersContainer">
-          <div class="filterGroup">
-            <select id="filterType">
-              <option value="all">Any type</option>
-              <option value="Online">Online</option>
-              <option value="Offline">Offline</option>
-            </select>
-          </div>
 
-          <div class="filterGroup">
-            <select id="filterDistance">
-              <option value="all">Any distance</option>
-              <option value="5 km">5 km</option>
-              <option value="10 km">10 km</option>
-              <option value="15 km">15 km</option>
-              <option value="25 km">25 km</option>
-              <option value="50 km">50 km</option>
-              <option value="75 km">75 km</option>
-              <option value="100 km">100 km</option>
-            </select>
-          </div>
+        <div class="eventsRightColumn">
+          <div class="mapStickyWrapper">
+            <span class="mapLabel">Find events near</span>
+            <h3 class="mapLocationTitle">New York, NY</h3>
 
-          <div class="filterGroup">
-            <select id="filterCategory">
-              <option value="all">Any category</option>
-              <option value="Social Activities">Social Activities</option>
-              <option value="Hobbies and Passions">Hobbies and Passions</option>
-              <option value="Health and Wellbeing">Health and Wellbeing</option>
-              <option value="Business">Business</option>
-              <option value="Technology">Technology</option>
-            </select>
-          </div>
-
-          <div class="filterGroup">
-            <select id="filterDate">
-              <option value="all">Any day</option>
-              <option value="Mar 13, 11:00 AM">Mar 13, 11:00 AM</option>
-              <option value="Mar 14, 11:00 AM">Mar 14, 11:00 AM</option>
-              <option value="Mar 14, 8:00 PM">Mar 14, 8:00 PM</option>
-              <option value="Mar 16, 2:00 PM">Mar 16, 2:00 PM</option>
-              <option value="Mar 23, 11:30 AM">Mar 23, 11:30 AM</option>
-              <option value="Mar 30, 2:00 PM">Mar 30, 2:00 PM</option>
-            </select>
-          </div>
-        </div>
-        <div id="eventsGrid" class="eventsListContainer"></div>
-      </div>
-
-       <div class="mapWidgetContainer">
-            <iframe 
-              src="https://google.com" 
-              width="100%" 
-              height="260" 
-              style="border:0; display:block;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <button class="browseInMapBtn" onclick="event.preventDefault();">
-              Browse in map ↗
-            </button>
+            <div class="mapWidgetContainer">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07658606017!2d-74.30914537216543!3d40.69667270806194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2str!4v1792399472376!5m2!1sru!2str"
+                width="100%"
+                height="260"
+                style="border: 0; display: block; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+              <button class="browseInMapBtn" onclick="event.preventDefault()">
+                Browse in map ↗
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
     <footer class="footer">
       <div class="container footerContent">
         <div class="footerTopRow">

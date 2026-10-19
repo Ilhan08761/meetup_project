@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="eventInfo">
           <h3 class="eventTitle">${event.title}</h3>
-          <div class="eventCategory">${event.category} ${event.distance ? `(\${event.distance})` : `(\${typeLabel})`}</div>
+          <div class="eventCategory">${event.category} ${event.distance ? `(${event.distance})` : `(${typeLabel})`}</div>
           <div class="eventDate"><span>📅</span> ${event.fullDate}</div>
           <div class="eventMeta">
             <div class="eventAttendees"><span>✔️</span> ${event.attendees} going</div>

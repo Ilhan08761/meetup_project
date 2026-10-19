@@ -4,20 +4,33 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  function createCardHtml(event) {
+  function createCardHtml(event, isListPage = false) {
     const isOnline = !event.distance;
-    const typeLabel = event.distance ? "Offline" : "Online";
+    const typeLabel = isOnline ? "Online" : "Offline";
     const distanceText = event.distance
-      ? `(${event.distance})`
-      : `(${typeLabel})`;
+      ? `${event.category} (${event.distance})`
+      : `${event.category}`;
 
     const onlineBadgeHtml = isOnline
-      ? `<div class="onlineBadge">
-          <span class="onlineIcon">📹</span> 
-          Online Event
-         </div>`
+      ? `<div class="onlineBadge"><span class="onlineIcon">📹</span> Online Event</div>`
       : "";
 
+    if (isListPage) {
+      return `
+        <div class="eventListRow" onclick="window.location.href='events.html'">
+          <div class="eventListImageWrapper">
+            <img src="${event.image}" alt="${event.title}" class="eventListImage">
+            ${onlineBadgeHtml}
+          </div>
+          <div class="eventListInfo">
+            <div class="eventListDate">${event.fullDate}</div>
+            <h3 class="eventListTitle">${event.title}</h3>
+            <div class="eventListCategory">${distanceText}</div>
+            <div class="eventListAttendees">👥 ${event.attendees} attendees</div>
+          </div>
+        </div>
+      `;
+    }
     return `
       <div class="eventCard" onclick="window.location.href='events.html'">
         <div class="eventImageContainer">
@@ -26,23 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="eventInfo">
           <h3 class="eventTitle">${event.title}</h3>
-          <div class="eventCategory">${event.category} ${distanceText}</div>
-          <div class="eventDate">
-            <span>📅</span> ${event.fullDate}
-          </div>
+          <div class="eventCategory">${event.category} ${event.distance ? `(\${event.distance})` : `(\${typeLabel})`}</div>
+          <div class="eventDate"><span>📅</span> ${event.fullDate}</div>
           <div class="eventMeta">
-            <div class="eventAttendees">
-              <span>✔️</span> ${event.attendees} going
-            </div>
+            <div class="eventAttendees"><span>✔️</span> ${event.attendees} going</div>
             <div class="eventPrice">
-  <svg class="ticketIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
-    <path d="M13 5v2"></path>
-    <path d="M13 17v2"></path>
-    <path d="M13 11v2"></path>
-  </svg>
-  ${event.price}
-</div>
+              <svg class="ticketIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
+              ${event.price}
+            </div>
           </div>
         </div>
       </div>
@@ -51,14 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const indexGrid = document.getElementById("indexEventsGrid");
   if (indexGrid) {
-    indexGrid.innerHTML = eventsData
+    const mainCards = eventsData.filter((event) => event.location === "main");
+
+    indexGrid.innerHTML = mainCards
       .slice(0, 8)
       .map((event) => createCardHtml(event))
       .join("");
   }
+
   const onlineGrid = document.getElementById("onlineEventsGrid");
   if (onlineGrid) {
-    onlineGrid.innerHTML = eventsData
+    const mainCards = eventsData.filter((event) => event.location === "main");
+    onlineGrid.innerHTML = mainCards
       .slice(8, 12)
       .map((event) => createCardHtml(event))
       .join("");
@@ -76,8 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const distanceVal = filterDistance.value;
       const categoryVal = filterCategory.value;
       const dateVal = filterDate.value;
-
       const filtered = eventsData.filter((event) => {
+        if (event.location !== "ny") return false;
+
         const isOffline = !!event.distance;
 
         const matchesType =
@@ -99,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
           '<p class="noEventsMessage">No events found matching your criteria.</p>';
       } else {
         filterGrid.innerHTML = filtered
-          .map((event) => createCardHtml(event))
+          .map((event) => createCardHtml(event, true))
           .join("");
       }
     }

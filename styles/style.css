@@ -13,15 +13,104 @@ button {
   font-family: inherit;
 }
 
+main {
+  width: 100%;
+}
+
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1196px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.container.navbarContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.navbarLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  max-width: 680px;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.navbarLogo img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.navbarSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 4px 0 12px;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.searchEventsInput {
+  border: none;
+  padding: 10px 8px;
+  font-size: 14px;
+  color: #212121;
+  outline: none;
+  width: 100%;
+}
+
 .searchLocationSelect {
   border: none;
+  border-left: 1px solid #dcdcdc;
   padding: 10px 40px 10px 12px;
   font-size: 14px;
   color: #212121;
@@ -29,7 +118,6 @@ button {
   width: 40%;
   background-color: #ffffff;
   cursor: pointer;
-
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -44,71 +132,6 @@ button {
   outline: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdcdc;
-  padding: 12px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.navbarContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.navbarLogo img {
-  height: 34px;
-  display: block;
-}
-
-.navbarSearch {
-  display: flex;
-  align-items: center;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 500px;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.searchInputWrapper {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  border-right: 1px solid #dcdcdc;
-  padding-left: 12px;
-}
-
-.searchIcon {
-  display: flex;
-  align-items: center;
-  margin-right: 4px;
-}
-
-.searchEventsInput,
-.searchLocationInput {
-  border: none;
-  padding: 10px 12px;
-  font-size: 14px;
-  color: #212121;
-  outline: none;
-  width: 100%;
-}
-
-.searchLocationInput {
-  width: 40%;
-}
-
 .navbarSearchBtn {
   background-color: #f65858;
   border: none;
@@ -119,6 +142,7 @@ a {
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  flex-shrink: 0;
 }
 
 .navbarSearchBtn:hover {
@@ -129,6 +153,45 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.langSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.loginLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.loginLink:hover {
+  color: #f65858;
+}
+
+.signUpBtn {
+  background-color: #008294;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.signUpBtn:hover {
+  background-color: #006977;
 }
 
 .langSelector {

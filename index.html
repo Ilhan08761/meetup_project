@@ -18,52 +18,55 @@
   <body>
     <header class="navbar">
       <div class="container navbarContent">
-        <a href="index.html" class="logo">
-          <img src="styles/images/logo.svg" alt="Meetup Logo" />
-        </a>
+        <div class="navbarLeft">
+          <a href="index.html" class="navbarLogo">
+            <img src="styles/images/logo.svg" alt="Meetup Logo" />
+          </a>
 
-        <div class="navbarSearch">
-          <div class="searchInputWrapper">
-            <span class="searchIcon">
+          <div class="navbarSearch">
+            <div class="searchInputWrapper">
+              <span class="searchIcon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#757575"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <input
+                type="text"
+                placeholder="Search events"
+                class="searchEventsInput"
+              />
+            </div>
+
+            <select class="searchLocationSelect">
+              <option value="Mountain View, CA">Mountain View, CA</option>
+              <option value="New York, NY">New York, NY</option>
+              <option value="Orlando, FL">Orlando, FL</option>
+            </select>
+
+            <button class="navbarSearchBtn">
               <svg
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#757575"
-                stroke-width="2"
+                stroke="white"
+                stroke-width="2.5"
               >
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
-            </span>
-            <input
-              type="text"
-              placeholder="Search events"
-              class="searchEventsInput"
-            />
+            </button>
           </div>
-
-          <select class="searchLocationSelect">
-            <option value="Mountain View, CA">Mountain View, CA</option>
-            <option value="New York, NY">New York, NY</option>
-            <option value="Orlando, FL">Orlando, FL</option>
-          </select>
-
-          <button class="navbarSearchBtn">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2.5"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
         </div>
+        <!-- КОНЕЦ navbarLeft -->
 
         <div class="navbarActions">
           <div class="langSelector">
@@ -76,7 +79,6 @@
       </div>
     </header>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main>
       <section class="heroSection">
         <div class="container heroContent">
@@ -109,13 +111,12 @@
               Events near
               <span class="locationHighlight">Mountain View, CA</span>
             </h2>
-            <!-- Ссылка для перехода на страницу всех фильтров -->
             <a href="events.html" class="seeAllLink">See all events</a>
           </div>
-
           <div id="indexEventsGrid" class="indexEventsGrid"></div>
         </div>
       </section>
+
       <!-- СЕКЦИЯ ПРЕДСТОЯЩИХ ОНЛАЙН МЕРОПРИЯТИЙ -->
       <section class="upcomingOnlineSection">
         <div class="container">
@@ -161,7 +162,6 @@
           <h2 class="categoriesMainTitle">Explore top categories</h2>
 
           <div class="categoriesContainer">
-            <!-- 1.  -->
             <div class="categoryCard">
               <img
                 src="styles/images/1.svg"
@@ -171,7 +171,6 @@
               <span class="categoryName">Travel and Outdoor</span>
             </div>
 
-            <!-- 2.  -->
             <div class="categoryCard">
               <img
                 src="styles/images/2.svg"
@@ -181,7 +180,6 @@
               <span class="categoryName">Social Activities</span>
             </div>
 
-            <!-- 3.  -->
             <div class="categoryCard">
               <img
                 src="styles/images/3.svg"
@@ -191,7 +189,6 @@
               <span class="categoryName">Hobbies and Passions</span>
             </div>
 
-            <!-- 4. -->
             <div class="categoryCard">
               <img
                 src="styles/images/4.svg"
@@ -201,7 +198,6 @@
               <span class="categoryName">Sports and Fitness</span>
             </div>
 
-            <!-- 5.  -->
             <div class="categoryCard">
               <img
                 src="styles/images/5.svg"
@@ -211,7 +207,6 @@
               <span class="categoryName">Health and Wellbeing</span>
             </div>
 
-            <!-- 6.  -->
             <div class="categoryCard">
               <img
                 src="styles/images/6.svg"
@@ -221,7 +216,6 @@
               <span class="categoryName">Technology</span>
             </div>
 
-            <!-- 7. -->
             <div class="categoryCard">
               <img
                 src="styles/images/7.svg"
@@ -231,7 +225,6 @@
               <span class="categoryName">Art and Culture</span>
             </div>
 
-            <!-- 8.  -->
             <div class="categoryCard">
               <img src="styles/images/8.svg" alt="Games" class="categoryIcon" />
               <span class="categoryName">Games</span>
@@ -249,7 +242,6 @@
           </p>
 
           <div class="citiesContainer">
-            <!-- 1. New York -->
             <div class="cityCard">
               <div class="cityImageWrapper">
                 <img
@@ -261,7 +253,6 @@
               <span class="cityName">New York</span>
             </div>
 
-            <!-- 2. San Francisco -->
             <div class="cityCard">
               <div class="cityImageWrapper">
                 <img
@@ -273,7 +264,6 @@
               <span class="cityName">San Francisco</span>
             </div>
 
-            <!-- 3. Chicago -->
             <div class="cityCard">
               <div class="cityImageWrapper">
                 <img
@@ -285,7 +275,6 @@
               <span class="cityName">Chicago</span>
             </div>
 
-            <!-- 4. Nashville -->
             <div class="cityCard">
               <div class="cityImageWrapper">
                 <img
@@ -297,7 +286,6 @@
               <span class="cityName">Nashville</span>
             </div>
 
-            <!-- 5. Miami -->
             <div class="cityCard">
               <div class="cityImageWrapper">
                 <img

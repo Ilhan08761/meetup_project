@@ -1,18 +1,31 @@
+main {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 158px;
+  box-sizing: border-box;
+}
+
 .heroSection {
   padding: 60px 0;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .heroContent {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  max-width: 1196px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
 }
 
 .heroText {
   flex: 1;
-  max-width: 600px;
+  max-width: 520px;
 }
 
 .heroTitle {
@@ -20,7 +33,7 @@
   font-size: 42px;
   line-height: 52px;
   color: #212121;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
   letter-spacing: 0%;
 }
 
@@ -29,7 +42,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #757575;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
 }
 
 .joinMeetupBtn {
@@ -52,11 +65,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .heroImage {
-  width: 379px;
-  height: 269px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   object-fit: contain;
   display: block;
 }
@@ -67,7 +82,7 @@
 }
 
 .joinMeetupBanner {
-  width: 1192px;
+  width: 100%;
   height: 236px;
   background-color: #f0fbfd;
   border-radius: 8px;

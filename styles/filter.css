@@ -70,10 +70,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 28px;
+  margin-top: 48px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sectionTitle {
@@ -103,14 +105,14 @@
 }
 
 .indexEventsGrid,
-.eventsGrid,
 .onlineEventsGrid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 48px;
+  width: 100%;
 }
 
 .eventImageContainer {
@@ -121,15 +123,26 @@
   border-radius: 8px;
 }
 
+.eventsGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 0px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
 .eventCard {
   width: 272px;
-  height: 399px;
+  min-height: 380px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  margin: 0 0 32px 0;
 }
 
 .eventImage {
@@ -145,6 +158,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  justify-content: flex-start;
 }
 
 .eventTitle {
@@ -153,6 +167,7 @@
   line-height: 24px;
   color: #212121;
   margin-bottom: 8px;
+  min-height: 48px;
 }
 
 .eventCategory {
@@ -160,7 +175,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #757575;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .eventDate {
@@ -168,7 +183,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #212121;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -177,12 +192,14 @@
 .eventMeta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #212121;
   margin-top: auto;
+  padding-top: 12px;
 }
 
 .eventAttendees,
@@ -224,6 +241,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 48px;
   margin-top: 24px;
 }
@@ -250,7 +268,6 @@
   padding-bottom: 8px;
 }
 
-/* --- СТИЛИ ДЛЯ СТРОКИ МЕРОПРИЯТИЯ (LIST VIEW) --- */
 .eventsListContainer {
   display: flex;
   flex-direction: column;
@@ -311,7 +328,6 @@
   margin-bottom: 2px;
 }
 
-/* --- СТИЛИ ДЛЯ ВИДЖЕТА КАРТЫ СБОКУ --- */
 .mapStickyWrapper {
   position: sticky;
   top: 90px;
@@ -372,4 +388,13 @@
   left: 4px;
   padding: 2px 6px;
   font-size: 10px;
+}
+
+.featuredSection .container,
+.upcomingOnlineSection .container {
+  max-width: 1196px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }

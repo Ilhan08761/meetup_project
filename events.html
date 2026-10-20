@@ -10,51 +10,55 @@
   <body>
     <header class="navbar">
       <div class="container navbarContent">
-        <a href="index.html" class="navbarLogo">
-          <img src="styles/images/logo.svg" alt="Meetup" />
-        </a>
+        <div class="navbarLeft">
+          <a href="index.html" class="navbarLogo">
+            <img src="styles/images/logo.svg" alt="Meetup Logo" />
+          </a>
 
-        <div class="navbarSearch">
-          <div class="searchInputWrapper">
-            <span class="searchIcon">
+          <div class="navbarSearch">
+            <div class="searchInputWrapper">
+              <span class="searchIcon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#757575"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <input
+                type="text"
+                placeholder="Search events"
+                class="searchEventsInput"
+              />
+            </div>
+
+            <select class="searchLocationSelect">
+              <option value="Mountain View, CA">Mountain View, CA</option>
+              <option value="New York, NY">New York, NY</option>
+              <option value="Orlando, FL">Orlando, FL</option>
+            </select>
+
+            <button class="navbarSearchBtn">
               <svg
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#757575"
-                stroke-width="2"
+                stroke="white"
+                stroke-width="2.5"
               >
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
-            </span>
-            <input
-              type="text"
-              placeholder="Search events"
-              class="searchEventsInput"
-            />
+            </button>
           </div>
-          <select class="searchLocationSelect">
-            <option value="Mountain View, CA">Mountain View, CA</option>
-            <option value="New York, NY">New York, NY</option>
-            <option value="Orlando, FL">Orlando, FL</option>
-          </select>
-
-          <button class="navbarSearchBtn">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2.5"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
         </div>
+        <!-- КОНЕЦ navbarLeft -->
 
         <div class="navbarActions">
           <div class="langSelector">

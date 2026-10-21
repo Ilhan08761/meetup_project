@@ -398,7 +398,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* --- МОБИЛЬНАЯ СТРАНИЦА КАРТОЧЕК (ЭКРАНЫ ДО 768PX) --- */
+
 @media (max-width: 768px) {
   .featuredSection .container,
   .upcomingOnlineSection .container {
@@ -415,7 +415,6 @@
     line-height: 26px;
   }
 
-  /* Сетка карточек превращается в вертикальную ленту строк */
   .indexEventsGrid,
   .onlineEventsGrid {
     flex-direction: column;
@@ -423,24 +422,22 @@
     width: 100%;
   }
 
-  /* Сама карточка становится строкой шириной 370px */
   .featuredSection .eventCard,
   .upcomingOnlineSection .eventCard {
-    flex-direction: row; /* ИСПРАВЛЕНО: Картинка слева, текст справа */
+    flex-direction: row;
     width: 100%;
-    max-width: 370px; /* Ваша точная мобильная ширина карточки */
+    max-width: 370px;
     min-height: auto;
     height: auto;
     gap: 12px;
     margin: 0 auto;
     padding-bottom: 16px;
-    border-bottom: 1px solid #e0e0e0; /* Разделительная линия между строками */
+    border-bottom: 1px solid #e0e0e0;
   }
 
-  /* Контейнер картинки сжимается до мобильных пропорций */
   .featuredSection .eventImageContainer,
   .upcomingOnlineSection .eventImageContainer {
-    width: 98px; /* Ваши точные размеры мобильной картинки */
+    width: 98px;
     height: 56px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -453,12 +450,10 @@
     border-radius: 4px;
   }
 
-  /* Скрываем онлайн-бейдж на мини-картинке мобильной версии, чтобы не перегружать интерфейс */
   .onlineBadge {
     display: none;
   }
 
-  /* Текстовая правая часть карточки */
   .featuredSection .eventInfo,
   .upcomingOnlineSection .eventInfo {
     padding: 0;
@@ -479,13 +474,11 @@
     margin-bottom: 2px;
   }
 
-  /* Прячем иконки и выстраиваем участников и цену компактно */
   .eventMeta {
     padding-top: 4px;
     font-size: 12px;
   }
 }
-/* Footer на всю ширину экрана */
 
 @media (min-width: 769px) {
   body .footer,

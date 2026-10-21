@@ -286,13 +286,11 @@ main {
   text-decoration: underline;
 }
 
-/* --- МОБИЛЬНАЯ АДАПТАЦИЯ HERO-СЕКЦИИ (ЭКРАНЫ ДО 768PX) --- */
 @media (max-width: 768px) {
   .heroSection {
     padding: 24px 0;
   }
 
-  /* Перестраиваем текст и картинку в вертикальную колонку */
   .heroContent {
     flex-direction: column;
     text-align: left;
@@ -319,23 +317,20 @@ main {
     margin-bottom: 16px;
   }
 
-  /* Кнопка Join Meetup сохраняется на мобильной версии */
   .joinMeetupBtn {
     width: auto;
     padding: 10px 20px;
     font-size: 14px;
   }
 
-  /* Картинка уходит вниз контента */
   .heroImageContainer {
     width: 100%;
     display: flex;
     justify-content: center;
-    order: 2; /* Гарантирует, что картинка будет в самом низу секции */
+    order: 2;
   }
 
   .heroImage {
-    /* Ваши точные мобильные размеры картинки */
     width: 215px;
     height: 154px;
     object-fit: contain;

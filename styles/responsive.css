@@ -1,0 +1,1077 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+footer {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  body main,
+  body main.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  body .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  body img {
+    max-width: 100%;
+  }
+
+  body .navbar {
+    padding: 10px 0;
+  }
+
+  body .container.navbarContent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 12px;
+    padding: 0 16px;
+  }
+
+  body .navbarLeft {
+    display: contents;
+  }
+
+  body .navbarLogo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    margin-right: 0;
+  }
+
+  body .navbarLogo img {
+    height: 24px;
+  }
+
+  body .navbarActions {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  body .langSelector,
+  body .loginLink {
+    font-size: 11px;
+  }
+
+  body .signUpBtn {
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+
+  body .navbarSearch {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  body .searchLocationSelect {
+    display: none;
+  }
+
+  body .searchInputWrapper {
+    min-width: 0;
+    flex: 1;
+  }
+
+  body .searchEventsInput {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  body .heroSection {
+    width: 100%;
+    padding: 28px 0;
+  }
+
+  body .heroContent {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  body .heroText {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  body .heroTitle {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  body .heroDescription {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  body .heroImageContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  body .heroImage {
+    width: 215px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  body .sectionHeader {
+    width: 100%;
+    gap: 10px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  body .sectionTitle {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  body .seeAllLink {
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  body .featuredSection .container,
+  body .upcomingOnlineSection .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  body .indexEventsGrid,
+  body .onlineEventsGrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  body #indexEventsGrid > .eventCard:nth-child(n + 4) {
+    display: none;
+  }
+
+  body .featuredSection .eventCard,
+  body .upcomingOnlineSection .eventCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 0 0 12px;
+    gap: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+  }
+
+  body .featuredSection .eventImageContainer,
+  body .upcomingOnlineSection .eventImageContainer {
+    width: 98px;
+    height: 56px;
+    flex: 0 0 98px;
+  }
+
+  body .featuredSection .eventImage,
+  body .upcomingOnlineSection .eventImage {
+    width: 98px;
+    height: 56px;
+    object-fit: cover;
+  }
+
+  body .featuredSection .eventInfo,
+  body .upcomingOnlineSection .eventInfo {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+  }
+
+  body .eventTitle {
+    font-size: 13px;
+    line-height: 17px;
+    min-height: 0;
+    margin-bottom: 4px;
+    overflow-wrap: anywhere;
+  }
+
+  body .eventCategory,
+  body .eventDate,
+  body .eventMeta {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  body .eventMeta {
+    padding-top: 4px;
+  }
+
+  body .joinMeetupSection {
+    margin: 24px 0 36px;
+  }
+
+  body .joinMeetupBanner {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  body .joinMeetupTextContent {
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  body .joinMeetupImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body .categoriesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  body .categoryCard {
+    width: calc(50% - 6px);
+    min-width: 0;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  body .citiesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  body .citiesContainer .cityCard:nth-child(5) {
+    display: none;
+  }
+
+  body .cityImageWrapper {
+    width: 140px;
+    height: 140px;
+    max-width: 100%;
+  }
+
+  body .friendshipsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  body .friendshipCard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body .friendshipImgWrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1.96;
+  }
+
+  body .friendshipCardTitle {
+    min-height: 0;
+  }
+
+  body .friendshipCardDescription {
+    height: auto;
+  }
+
+  body .pageTitle {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 26px 0 20px;
+  }
+
+  body .eventsPageLayout {
+    display: block;
+    margin-top: 0;
+  }
+
+  body .eventsLeftColumn {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  body .eventsRightColumn {
+    display: none;
+  }
+
+  body .eventsTabHeader {
+    margin-bottom: 14px;
+    border-bottom: 0;
+  }
+
+  body .activeTab {
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 4px solid #00798a;
+  }
+
+  body .filtersContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: transparent;
+    border-radius: 0;
+    margin: 0 -16px 18px;
+    padding: 0 16px 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body .filterGroup {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  body .filterGroup select {
+    width: auto;
+    min-width: 118px;
+    height: 46px;
+    padding: 0 36px 0 18px;
+    border: 0;
+    border-radius: 24px;
+    background-color: #f1f2f3;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  body #filterDistance {
+    min-width: 145px;
+  }
+
+  body #filterCategory {
+    min-width: 155px;
+  }
+
+  body .eventsListContainer {
+    gap: 0;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  body .eventListRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 0 24px;
+    margin: 0;
+    min-height: 110px;
+    box-sizing: border-box;
+  }
+
+  body .eventListImageWrapper {
+    width: 98px;
+    height: 56px;
+    flex: 0 0 98px;
+    border-radius: 4px;
+  }
+
+  body .eventListImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body .eventListInfo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  body .eventListDate {
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 3px;
+  }
+
+  body .eventListTitle {
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 3px;
+    overflow-wrap: anywhere;
+  }
+
+  body .eventListCategory,
+  body .eventListAttendees {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  body .footer {
+    margin-top: 48px;
+  }
+
+  body .footerContent {
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 16px 24px;
+    box-sizing: border-box;
+  }
+
+  body .footerTopRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #555;
+  }
+
+  body .footerCreateText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  body .footerGetStartedBtn {
+    flex-shrink: 0;
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+
+  body .footerLinksRow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 24px;
+  }
+
+  body .footerColumn {
+    min-width: 0;
+  }
+
+  body .footerColumnTitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  body .footerLink {
+    font-size: 12px;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  body .footerSocialRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  body .footerSocialIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  body .footerAppLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  body .appStoreImg,
+  body .googlePlayImg {
+    width: 120px;
+    height: auto;
+  }
+
+  body .footerBottomRow {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  body .heroTitle {
+    font-size: 24px;
+  }
+
+  body .pageTitle {
+    font-size: 22px;
+  }
+
+  body .footerLinksRow {
+    gap: 8px;
+  }
+
+  body .footerColumnTitle,
+  body .footerLink {
+    font-size: 11px;
+  }
+
+  body .cityImageWrapper {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  body main {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+
+  body .heroContent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+  }
+
+  body .heroText {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  body .heroTitle {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  body .heroDescription {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  body .heroImageContainer {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  body .heroImage {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  body .indexEventsGrid,
+  body .onlineEventsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  body .eventCard {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  body .eventImageContainer,
+  body .eventImage {
+    width: 100%;
+  }
+
+  body .joinMeetupBanner {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  body .categoriesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  body .categoryCard {
+    width: 100%;
+    max-width: none;
+  }
+
+  body .citiesContainer {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  body .cityCard {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body .cityImageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  body .howItWorksContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  body .friendshipsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  body .friendshipCard {
+    width: 100%;
+    min-width: 0;
+  }
+
+  body .friendshipImgWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.96;
+  }
+
+  body .footer,
+  body footer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  body .footerContent {
+    width: 100%;
+    max-width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+  body .footerLinksRow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  body .eventsPageLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 24px;
+  }
+
+  body .eventsLeftColumn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  body .eventsRightColumn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .howMeetupContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+
+  .howMeetupCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .howMeetupCardContent {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body .container.navbarContent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 24px;
+  }
+
+  body .navbarLeft {
+    display: contents;
+  }
+
+  body .navbarLogo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  body .navbarActions {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+  }
+
+  body .navbarSearch {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  body .searchInputWrapper {
+    flex: 1;
+    min-width: 0;
+  }
+
+  body .searchEventsInput {
+    width: 100%;
+    min-width: 0;
+  }
+
+  body .searchLocationSelect {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body .joinMeetupBanner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 24px 16px;
+    background: transparent;
+  }
+  body .joinMeetupTextContent {
+    display: contents;
+  }
+  body .joinMeetupTitle {
+    order: 1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0 0 12px;
+    text-align: left;
+  }
+  body .joinMeetupImgContainer {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 12px;
+  }
+  body .joinMeetupImage {
+    display: block;
+    width: min(100%, 280px);
+    height: auto;
+  }
+  body .joinMeetupDescription {
+    order: 3;
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0 0 16px;
+  }
+  body .joinMeetupSignBtn {
+    order: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: min(100%, 240px);
+    box-sizing: border-box;
+  }
+  body .sectionTitle,
+  body .categoriesMainTitle,
+  body .citiesMainTitle,
+  body .howMeetupMainTitle,
+  body .friendshipsMainTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  body .heroTitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.5px;
+  }
+  body .categoryName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  body .cityName {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  body .friendshipCardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26.83px;
+  }
+  body .friendshipCardDescription {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  body .categoriesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  body .categoryCard {
+    width: 100%;
+  }
+  body .citiesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  body .cityCard {
+    width: 100%;
+    min-width: 0;
+  }
+  body .cityImageWrapper {
+    width: min(100%, 140px);
+    height: auto;
+    aspect-ratio: 1;
+    margin-inline: auto;
+  }
+  body .howMeetupContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  body .howMeetupCard {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  body .footer {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  body .footerContent {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 32px 16px 24px;
+  }
+  body .footerLegalLinks {
+    display: none;
+  }
+  body .footerAppLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  body .appStoreImg,
+  body .googlePlayImg {
+    display: block;
+    width: 120px;
+    height: auto;
+  }
+  body .footerBottomRow {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .featuredSection .seeAllLink,
+  .upcomingOnlineSection .seeAllLink {
+    display: none;
+  }
+
+  .onlineEventsGrid > .eventCard:nth-child(n + 4) {
+    display: none;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .heroText .joinMeetupBtn {
+    position: static;
+    display: flex;
+    width: fit-content;
+    margin: 20px auto 0;
+    transform: none;
+  }
+
+  .howMeetupCardTitle {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+  .howMeetupCardDescription {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .footerAppLinks {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .featuredSection .seeAllLink,
+  .upcomingOnlineSection .seeAllLink {
+    display: none;
+  }
+}
+/* Tablet and small laptop: 769–1350px */
+@media (min-width: 769px) and (max-width: 1350px) {
+  body .categoriesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+  body .categoryCard {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+  body .citiesContainer {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+  body .cityCard {
+    min-width: 0;
+    width: 100%;
+  }
+  body .cityImageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  body .friendshipsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  body .friendshipCard {
+    min-width: 0;
+    width: 100%;
+  }
+  body .friendshipImgWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 376 / 192;
+  }
+  body .footer,
+  body footer {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body .footerAppLinks,
+  body footer .footerAppLinks,
+  body .footer img.googlePlayImg,
+  body .footer img.appStoreImg {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1350px) {
+  .howMeetupContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .howMeetupCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .howMeetupCardContent {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .howMeetupCardTitle,
+  .howMeetupCardDescription {
+    overflow-wrap: break-word;
+  }
+}

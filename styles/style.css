@@ -545,3 +545,428 @@ a {
 .legalLink:hover {
   color: #ffffff;
 }
+
+/* ==========================================================================
+   ПОЛНАЯ МОБИЛЬНАЯ АДАПТАЦИЯ (ЭКРАНЫ ДО 768px) 
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  body .navbar {
+    padding: 8px 0;
+  }
+
+  body .container.navbarContent {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px;
+    max-width: 100%;
+  }
+
+  body .navbarLeft {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  body .navbarSearch {
+    order: 2;
+    max-width: 342px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  body .searchLocationSelect {
+    display: none;
+  }
+
+  body .navbarActions {
+    order: 1;
+    margin-left: auto;
+    gap: 12px;
+  }
+
+  body .langSelector {
+    gap: 4px;
+  }
+
+  body .langText {
+    font-size: 13px;
+  }
+
+  body .signUpBtn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  body .heroSection {
+    padding: 24px 0;
+  }
+
+  body .heroContent {
+    flex-direction: column;
+    text-align: left;
+    gap: 32px;
+    padding: 0 16px;
+  }
+
+  body .heroText {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body .heroTitle {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  body .heroDescription {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  body .joinMeetupBtn {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  body .heroImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+
+  body .heroImage {
+    width: 215px;
+    height: 154px;
+    object-fit: contain;
+  }
+
+  body .joinMeetupSection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  body .joinMeetupBanner {
+    flex-direction: column;
+    height: auto;
+    padding: 24px 16px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  body .joinMeetupTextContent {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  body .joinMeetupTitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  body .joinMeetupDescription {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  body .joinMeetupSignBtn {
+    width: 192px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  body .joinMeetupImgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  body .joinMeetupImage {
+    width: 238px;
+    height: 136.8px;
+    object-fit: contain;
+  }
+
+  body .categoriesSection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+
+  body .categoriesMainTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  body .categoriesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  body .categoryCard {
+    width: 135px;
+    min-width: 135px;
+    max-width: 135px;
+    height: 112px;
+  }
+
+  body .howMeetupSection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+
+  body .howMeetupMainTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  body .howMeetupContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  body .howMeetupCard {
+    width: 100%;
+    max-width: 360.89px;
+    min-width: 0;
+    height: auto;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  body .popularCitiesSection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+
+  body .citiesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  body .citiesContainer .cityCard:nth-child(5) {
+    display: none;
+  }
+
+  body .cityImageWrapper {
+    width: 154px;
+    height: 154px;
+  }
+
+  body .friendshipsSection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body .friendshipsMainTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 8px 0;
+  }
+
+  body .friendshipsSubtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  body .friendshipsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    width: 100%;
+  }
+
+  body .friendshipCard {
+    width: 100%;
+    max-width: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body .friendshipImgWrapper {
+    width: 100%;
+    max-width: 364px;
+    height: 186px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  body .friendshipImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body .friendshipCardTitle {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #212121;
+    margin: 0 0 8px 0;
+    min-height: auto;
+  }
+
+  body .friendshipCardDescription {
+    font-size: 14px;
+    line-height: 20px;
+    color: #757575;
+    margin-bottom: 12px;
+    height: auto;
+    overflow: visible;
+  }
+
+  body .friendshipCardLink {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #00798a;
+    margin-top: 0;
+  }
+
+  body .footer {
+    padding: 24px 16px;
+    margin-top: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #212121;
+  }
+
+  body .footerTopRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    border-bottom: 1px solid #424242;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+
+  body .footerCreateText {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 65%;
+    color: #ffffff;
+  }
+
+  body .footerGetStartedBtn {
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  body .footerLinksRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 32px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body .footerColumn {
+    flex: 1;
+    min-width: 0;
+    gap: 8px;
+  }
+
+  body .footerColumnTitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+
+  body .footerLink {
+    font-size: 12px;
+    line-height: 16px;
+    word-wrap: break-word;
+  }
+
+  body .footerSocialRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-bottom: 1px solid #424242;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body .footerFollowBlock {
+    gap: 12px;
+    width: 100%;
+  }
+
+  body .footerFollowText {
+    font-size: 14px;
+  }
+
+  body .footerSocialIcons {
+    gap: 16px;
+  }
+
+  body .socialIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  body .footerAppLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  body .appStoreImg,
+  body .googlePlayImg {
+    width: 120px;
+    height: 36px;
+  }
+
+  body .footerBottomRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

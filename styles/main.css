@@ -285,3 +285,59 @@ main {
   color: #006270;
   text-decoration: underline;
 }
+
+/* --- МОБИЛЬНАЯ АДАПТАЦИЯ HERO-СЕКЦИИ (ЭКРАНЫ ДО 768PX) --- */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 24px 0;
+  }
+
+  /* Перестраиваем текст и картинку в вертикальную колонку */
+  .heroContent {
+    flex-direction: column;
+    text-align: left;
+    gap: 32px;
+    padding: 0 16px;
+  }
+
+  .heroText {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroTitle {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  .heroDescription {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  /* Кнопка Join Meetup сохраняется на мобильной версии */
+  .joinMeetupBtn {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Картинка уходит вниз контента */
+  .heroImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 2; /* Гарантирует, что картинка будет в самом низу секции */
+  }
+
+  .heroImage {
+    /* Ваши точные мобильные размеры картинки */
+    width: 215px;
+    height: 154px;
+    object-fit: contain;
+  }
+}

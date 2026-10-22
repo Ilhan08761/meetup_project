@@ -1075,3 +1075,37 @@ footer {
     overflow-wrap: break-word;
   }
 }
+@media (max-width: 1050px) {
+  .mapStickyWrapper {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .filtersContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filtersContainer > * {
+    flex: 0 0 auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1250px) {
+  .eventsPageLayout {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+  .pageTitle {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+}

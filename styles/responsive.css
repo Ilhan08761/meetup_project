@@ -797,7 +797,7 @@ footer {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
     padding: 24px 16px;
-    background: transparent;
+    /* background: transparent; */
   }
   body .joinMeetupTextContent {
     display: contents;

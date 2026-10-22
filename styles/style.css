@@ -68,8 +68,8 @@ a {
 }
 
 .navbarLogo img {
-  height: 28px;
-  width: auto;
+  height: 34px;
+  width: 96px;
   display: block;
 }
 
@@ -154,43 +154,6 @@ a {
   gap: 24px;
   margin-left: auto;
   flex-shrink: 0;
-}
-
-.langSelector {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  color: #212121;
-}
-
-.loginLink {
-  font-size: 14px;
-  font-weight: 500;
-  color: #212121;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.loginLink:hover {
-  color: #f65858;
-}
-
-.signUpBtn {
-  background-color: #008294;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.signUpBtn:hover {
-  background-color: #006977;
 }
 
 .langSelector {
@@ -386,8 +349,8 @@ a {
 .footer {
   background-color: #212121;
   color: #ffffff;
-  padding: 40px 0 30px 0;
-  margin-top: 64px;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -402,8 +365,8 @@ a {
   align-items: center;
   gap: 24px;
   border-bottom: 1px solid #424242;
-  padding-bottom: 24px;
-  margin-bottom: 32px;
+  padding-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .footerCreateText {
@@ -432,11 +395,10 @@ a {
 }
 
 .footerLinksRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 160px;
-  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  gap: 0;
 }
 
 .footerColumn {
@@ -870,7 +832,7 @@ a {
     gap: 12px;
     border-bottom: 1px solid #424242;
     padding-bottom: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     box-sizing: border-box;
   }
 

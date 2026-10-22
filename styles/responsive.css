@@ -19,16 +19,10 @@ footer {
   body main.container {
     width: 100%;
     max-width: 100%;
-    padding: 0 16px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  body .container {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
   }
 
@@ -75,13 +69,16 @@ footer {
   }
 
   body .langSelector,
-  body .loginLink {
-    font-size: 11px;
+  body .langText,
+  body .loginLink,
+  body .signUpBtn {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
   }
 
   body .signUpBtn {
-    padding: 7px 9px;
-    font-size: 11px;
+    padding: 6px 10px;
   }
 
   body .navbarSearch {
@@ -232,7 +229,7 @@ footer {
     font-size: 14px;
     line-height: 17px;
     min-height: 0;
-    margin: 0;
+    margin-bottom: 4px;
     overflow-wrap: anywhere;
   }
 
@@ -361,44 +358,6 @@ footer {
     border-bottom: 4px solid #00798a;
   }
 
-  body .filtersContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 12px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background: transparent;
-    border-radius: 0;
-    margin: 0 -16px 18px;
-    padding: 0 16px 10px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  body .filterGroup {
-    flex: 0 0 auto;
-    width: auto;
-  }
-
-  body .filterGroup select {
-    width: auto;
-    min-width: 118px;
-    height: 46px;
-    padding: 0 36px 0 18px;
-    border: 0;
-    border-radius: 24px;
-    background-color: #f1f2f3;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
-  body #filterDistance {
-    min-width: 145px;
-  }
-
-  body #filterCategory {
-    min-width: 155px;
-  }
-
   body .eventsListContainer {
     gap: 0;
     border-top: 1px solid #e0e0e0;
@@ -468,7 +427,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
     border-bottom: 1px solid #555;
   }
 
@@ -560,11 +519,25 @@ footer {
     height: 125px;
   }
 }
-
-@media (min-width: 769px) and (max-width: 1199px) {
+/* @media (min-width: 769px) {
+  body main {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+} */
+/* @media (min-width: 769px) and (max-width: 1199px) {
   body main {
     width: 100%;
     max-width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+  } */
+@media (min-width: 769px) and (max-width: 1199px) {
+  body main {
+    width: 100%;
+    max-width: 1196px;
+    margin: 0 auto;
     padding: 0 32px;
     box-sizing: border-box;
   }
@@ -692,19 +665,13 @@ footer {
   body .footerContent {
     width: 100%;
     max-width: 100%;
-    padding: 32px;
+    padding: 16px;
     box-sizing: border-box;
   }
 
   body .footerLinksRow {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-  }
-
-  body .eventsPageLayout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 240px;
     gap: 24px;
   }
 
@@ -987,7 +954,7 @@ footer {
     display: none;
   }
 }
-/* Tablet and small laptop: 769–1350px */
+
 @media (min-width: 769px) and (max-width: 1350px) {
   body .categoriesContainer {
     display: grid;
@@ -1075,37 +1042,112 @@ footer {
     overflow-wrap: break-word;
   }
 }
-@media (max-width: 1050px) {
+@media (min-width: 769px) and (max-width: 1050px) {
+  body .eventsPageLayout {
+    display: block;
+  }
+
+  body .eventsLeftColumn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body .eventsRightColumn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .mapStickyWrapper {
     display: none;
   }
 }
-@media (max-width: 999px) {
-  .filtersContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 12px;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
-  }
 
-  .filtersContainer > * {
-    flex: 0 0 auto;
+@media (min-width: 50px) and (max-width: 1514px) {
+  body main,
+  body main.container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
   }
 }
-@media (min-width: 769px) and (max-width: 1250px) {
-  .eventsPageLayout {
-    padding-left: 24px;
-    padding-right: 24px;
+@media (min-width: 50px) and (max-width: 1500px) {
+  body main,
+  body main.container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
   }
-  .pageTitle {
-    padding-left: 24px;
-    padding-right: 24px;
+
+  body .footer .footerContent {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  body main.container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  body .categoriesSection,
+  body .popularCitiesSection,
+  body .howMeetupSection,
+  body .friendshipsSection {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body .footer .footerContent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body .heroText {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  body .heroContent.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  body footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  body footer .footerContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  body footer .container.footerContent {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 0 16px;
     box-sizing: border-box;
   }
 }

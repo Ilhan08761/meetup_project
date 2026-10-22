@@ -95,7 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
           (typeVal === "Online" && !isOffline);
 
         const matchesDistance =
-          distanceVal === "all" || event.distance === distanceVal;
+          distanceVal === "all" ||
+          (event.distance !== "" &&
+            parseInt(event.distance) <= parseInt(distanceVal));
         const matchesCategory =
           categoryVal === "all" || event.category === categoryVal;
         const matchesDate = dateVal === "all" || event.day === dateVal;
